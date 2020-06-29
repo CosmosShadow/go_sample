@@ -3,6 +3,7 @@ package utils
 import (
 	"testing"
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 
@@ -22,6 +23,8 @@ func TestSomething1(t *testing.T) {
 
 	// assert for nil (good for errors)
 	// assert.Nil(t, object)
+	var a error = nil
+	require.NoError(t, a)
 
 	// assert for not nil (good when you expect something)
 	if assert.NotNil(t, object) {
