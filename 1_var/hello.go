@@ -1,4 +1,4 @@
-// 挡墙文件的包名，所有文件必须有
+// 当前文件的包名，所有文件必须有
 package main
 
 // format，格式化IO输出
@@ -41,7 +41,21 @@ func main() {
 
 	_, e := 5, 7
 	fmt.Println(e)
+
+	// 常量
+	const const_a = "const_a"
+	const const_b string = "const_b"
+	fmt.Println(const_a, const_b)
 }
 
 // 运行: go run hello.go
 // 编译和运行: go build hello.go && ./hello
+
+
+
+
+
+
+
+
+
