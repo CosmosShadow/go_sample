@@ -6,8 +6,6 @@ import (
 	"sync"
 )
 
-// go是协程，在main退出是，所有协程都会退出，无论是否执行完成没有
-
 var v = 0
 
 func f() int {
