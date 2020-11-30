@@ -11,7 +11,7 @@ func main() {
 
         /*删除元素*/ 
         delete(countryCapitalMap, "France")
-        fmt.Println("\n法国条目被删除")
+        fmt.Println("\nFrance条目被删除")
         printMap(countryCapitalMap)
 }
 

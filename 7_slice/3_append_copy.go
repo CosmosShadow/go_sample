@@ -22,8 +22,15 @@ func main() {
    numbers1 := make([]int, len(numbers), (cap(numbers))*2)
 
    /* 拷贝 numbers 的内容到 numbers1 */
-   copy(numbers1,numbers)
-   printSlice(numbers1)   
+   // 全拷贝，覆盖占位的东西
+   copy(numbers1, numbers)
+   printSlice(numbers1)
+
+   // a、b本身不可改
+   var a = make([]int, 3, 5)
+   b := append(a, 2)
+   printSlice(a)
+   printSlice(b)
 }
 
 func printSlice(x []int){
