@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-   var  ptr *int
+	var  ptr *int
 
-   fmt.Printf("ptr 的值为 : %x\n", ptr  )
+	fmt.Printf("ptr 的值为 : %x\n", ptr  )
 
-   if (ptr == nil) {
-   	fmt.Println("ptr is null")
-   }
+	if (ptr == nil) {
+		fmt.Println("ptr is null")	
+	}
 }
