@@ -16,7 +16,6 @@ go test -v -bench="BenchmarkGenShortID$" --run=none
 # 性能测试: 查看CPU性能
 go test -v -bench="BenchmarkGenShortID$" --run=none -cpuprofile cpu.out
 
-# 安装库: apt install graphviz
 # 通过web查看CPU详细性能
 go tool pprof -http=":" cpu.out
 ```
